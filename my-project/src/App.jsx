@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Footer from "./src/Footer.jsx";
 import AuthForm from "./src/AuthForm.jsx";
@@ -18,13 +18,13 @@ function App() {
 
     return (
         <div className="flex flex-col min-h-screen bg-gray-100">
-            <Header />
             <main className="flex-grow flex items-center justify-center">
                 <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
                     <h1 className="text-3xl font-bold underline mb-6"></h1>
                     <AuthForm onLogin={handleLogin} />
                 </div>
             </main>
+            <Footer/>
         </div>
     );
 }

@@ -13,7 +13,7 @@ const AuthForm = ({ onLogin }) => {
 
     return (
         <form onSubmit={handleSubmit} className="p-4 bg-white rounded shadow-md">
-            <h2 className="text-2xl font-bold mb-4">Авторизация</h2>
+         <h2 className="text-2xl font-bold mb-4">Авторизация</h2>
             <label htmlFor="login">Логин</label>
             <div className="mb-4">
                 <InputField
