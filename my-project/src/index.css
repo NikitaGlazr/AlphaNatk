@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2{
+  font-size: 2em;
+
+}
+button {
+  width: 150px;
+  height: 50px;
+  display: block; /* Для центрирования кнопки по горизонтали */
+  margin-top: 10px;
+  margin-left: 13%; /* Центрирование кнопки по горизонтали */
+  text-align: center; /* Центрирование текста внутри кнопки */
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.5em;
+  font-size: 0.5em;
+  font-weight: 50;
+  font-family: inherit;
+  background-color: #B6E8EC;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #CDE5EE;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+form{
+  border-radius: 15px; /* Закругление углов */
+  width: 100%; /* Увеличение ширины хедера */
+  margin-left: auto; /* Центрирование хедера по горизонтали */
+  margin-right: auto; /* Центрирование хедера по горизонтали */
+  background-color: #FFFFFF;
+  margin-top: auto;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+
+header {
+  border-radius: 15px; /* Закругление углов */
+  width: 100%; /* Увеличение ширины хедера */
+  margin-left: auto; /* Центрирование хедера по горизонтали */
+  margin-right: auto; /* Центрирование хедера по горизонтали */
+  background-color: #FFFFFF;
+  margin-top: auto;
+  text-align: center;
+  font-size: 3.2em;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+main {
+  margin-top: 50px;
+}
+
+img{
+  margin-left: 10px;
+
+}
+
+p{
+  text-align: justify;
+  padding: 10px;
+}
+
+
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+/* App.css */
+.inner-padding {
+  padding: 2rem;
+}
